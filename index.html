@@ -14,6 +14,10 @@
         }
         .navbar {
             background-color: #343a40;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
         .navbar-brand, .navbar-nav .nav-link {
             color: #fff;
@@ -30,6 +34,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            margin-top: 56px; /* Espaço para a navbar fixa */
         }
         header h1 {
             font-size: 3.5rem;
@@ -49,6 +54,9 @@
         }
         footer a:hover {
             color: white;
+        }
+        .highlight {
+            color: #999; /* Cor mais clara para os textos com strong */
         }
     </style>
 </head>
@@ -92,7 +100,7 @@
     <section id="about" class="bg-light">
         <div class="container text-center">
             <h2 class="mb-4">Sobre Mim</h2>
-            <p>Olá, meu nome é Jean Carlos Lefchak, Sou um desenvolvedor de software com experiência desde 2017, formado em análise e desenvolvimento de sistemas e pós-graduado em desenvolvimento de aplicativos mobile. Possuo conhecimentos avançados em diversas linguagens de programação e bancos de dados, sempre buscando me atualizar e aprender coisas novas, além de experiência em liderança de projetos e arquitetura de software. Destaco-me pela capacidade de aprender rapidamente novas tecnologias e pelo compromisso em entregar soluções.</p>
+            <p>Olá, meu nome é Jean Carlos Lefchak, sou um desenvolvedor de software com experiência desde 2017, formado em análise e desenvolvimento de sistemas e pós-graduado em desenvolvimento de aplicativos mobile. Possuo conhecimentos avançados em diversas linguagens de programação e bancos de dados, sempre buscando me atualizar e aprender coisas novas, além de experiência em liderança de projetos e arquitetura de software. Destaco-me pela capacidade de aprender rapidamente novas tecnologias e pelo compromisso em entregar soluções.</p>
         </div>
     </section>
 
@@ -102,13 +110,14 @@
             <h2 class="text-center mb-5">Experiência Profissional</h2>
             <div class="row">
                 <div class="col-md-12">
-                    <h5><strong>Confitec - Analista de Sistemas Sênior (Abril de 2023 - Setemboro de 2024)</strong></h5>
-                    <p>
+                    <h5><strong>Confitec - Analista de Sistemas Sênior (Abril de 2023 - Setembro de 2024)</strong></h5>
+                    <p class="highlight">
                         <strong>Desenvolvimento e Sustentação:</strong> Responsável pelo desenvolvimento de novas funcionalidades e manutenção de sistemas existentes. </br>
+                        <strong>Inovação e Inteligência Artificial:</strong> Responsável por liderar projetos de inovação utilizando Inteligência Artificial, desenvolvendo soluções que melhoram a eficiência.</br>
+                        <strong>Migração de Sistemas Legados:</strong> Condução de migração de sistemas legados para arquiteturas modernas, melhorando a escalabilidade e a manutenção dos sistemas.</br>
                         <strong>Liderança Técnica:</strong> Liderança técnica de equipes de desenvolvimento e inovação de projetos, garantindo a qualidade e a eficiência das soluções entregues.</br>
                         <strong>Validação e Code Review:</strong> Revisão de código e validação de padrões de qualidade, assegurando a aderência às melhores práticas de desenvolvimento.</br>
-                        <strong>Configuração de Ambientes:</strong> Configuração de ambientes com Windows Server e implementação de pipelines de CI/CD utilizando Azure DevOps e tfs.</br>
-                        <strong>Migração de Sistemas Legados:</strong> Condução de migração de sistemas legados para arquiteturas modernas, melhorando a escalabilidade e a manutenção dos sistemas.</br>
+                        <strong>Configuração de Ambientes:</strong> Configuração de ambientes com Windows Server e implementação de pipelines de CI/CD utilizando Azure DevOps e TFS.</br>
                         <strong>Desenvolvimento de Aplicativos:</strong> Desenvolvimento de aplicativos móveis, web e serviços de back-end, além da integração com mensagerias (RabbitMQ, Kafka).</br>
                         <strong>Deploy em Ambiente de Produção:</strong> Realização de deploy em ambientes de produção, garantindo a estabilidade e o desempenho dos sistemas.</br>
                         <strong>Administração de Banco de Dados (DBA):</strong> Otimização de consultas SQL, criação de views, queries e procedures para melhorar o desempenho dos bancos de dados.</br>
@@ -116,7 +125,7 @@
                     </p>
 
                     <h5><strong>MJV Technology & Innovation - Mobile Developer (Agosto de 2022 - Abril de 2023)</strong></h5>
-                    <p>
+                    <p class="highlight">
                         <strong>Desenvolvimento Mobile:</strong> Responsável pelo desenvolvimento de aplicativos móveis para Internet Banking utilizando Ionic e Angular.</br>
                         <strong>Foco em UI/UX:</strong> Desenvolvimento com foco na criação de interfaces intuitivas e melhorias na experiência do usuário.</br>
                         <strong>Publicação de Aplicativos:</strong> Configuração e publicação de aplicativos nas lojas Google Play e Apple Store.</br>
@@ -124,27 +133,27 @@
                     </p>
 
                     <h5><strong>Gentus - Desenvolvedor Full Stack (Fevereiro de 2019 - Julho de 2022)</strong></h5>
-                    <p>
-                        <strong> Desenvolvimento de Soluções para a Área de Saúde:</strong> Criação e manutenção de sistemas voltados para clínicas e consultórios médicos.</br>
+                    <p class="highlight">
+                        <strong>Desenvolvimento de Soluções para a Área de Saúde:</strong> Criação e manutenção de sistemas voltados para clínicas e consultórios médicos.</br>
                         <strong>Arquitetura de Software:</strong> Definição da arquitetura de software e desenvolvimento de APIs para integração de sistemas.</br>
                         <strong>Configuração de Novos Ambientes:</strong> Configuração de novos ambientes de desenvolvimento, teste e produção, otimizando o processo de deploy e garantindo a estabilidade dos sistemas.</br>
                         <strong>Deploy em Produção:</strong> Responsável por realizar deploys em ambientes de produção, assegurando a continuidade e o desempenho dos sistemas após cada release.</br>
                         <strong>Tomada de Decisões Técnicas e de Negócio:</strong> Liderança na tomada de decisões estratégicas relacionadas à escolha de tecnologias, ferramentas, soluções arquiteturais e definições de regras de negócio.</br>
-                        <strong>Publicação de Aplicações:</strong> Implementação e publicação de soluções em servidores IIS, nuvem (AWS e Azure) e nas lojas Play store e Apple store.</br>
+                        <strong>Publicação de Aplicações:</strong> Implementação e publicação de soluções em servidores IIS, nuvem (AWS e Azure) e nas lojas Play Store e Apple Store.</br>
                         <strong>Integrações e Notificações:</strong> Utilização de ferramentas como OneSignal, Twilio e JWT/OAuth2 para autenticação e envio de notificações.</br>
                         <strong>Desenvolvimento Full Stack:</strong> Desenvolvimento de aplicações web e mobile com Angular, .NET e Ionic.</br>
                     </p>
 
                     <h5><strong>Faculdade de Pato Branco FADEP - Professor (Outubro de 2018 - Fevereiro de 2019)</strong></h5>
-                    <p>
+                    <p class="highlight">
                         <strong>Ensino de Lógica de Programação:</strong> Ministrava aulas sobre conceitos fundamentais de lógica de programação, focada em desenvolvimento.</br>
                         <strong>Modelagem de Banco de Dados:</strong> Ensinava técnicas de modelagem de banco de dados, incluindo criação de diagramas ER (Entidade-Relacionamento) e normalização de dados.</br>
-                        <strong>Linguagens de Programação:</strong> Utilização de Delph, Python para ensinar a aplicação prática dos conceitos de programação.</br>
+                        <strong>Linguagens de Programação:</strong> Utilização de Delphi e Python para ensinar a aplicação prática dos conceitos de programação.</br>
                         <strong>Desenvolvimento Web:</strong> Introdução a tecnologias como HTML/CSS para capacitar os alunos a criarem interfaces de usuário básicas.</br>
                     </p>
 
                     <h5><strong>Devionn Soluções Tecnológicas - Desenvolvedor Full Stack (Agosto de 2016 - Outubro de 2018)</strong></h5>
-                    <p>
+                    <p class="highlight">
                         <strong>Arquitetura e Desenvolvimento de Sistemas:</strong> Desenvolvimento de soluções para força de vendas e monitoramento, utilizando tecnologias como Angular, Ionic, PostgreSQL, Java e AWS.</br>
                         <strong>Liderança de Equipe:</strong> Responsável pela liderança de equipes de desenvolvimento, promovendo a colaboração e a eficiência dos times.</br>
                         <strong>Tomada de Decisões Técnicas:</strong> Participação ativa nas decisões estratégicas, envolvendo a escolha de tecnologias e definições arquiteturais.</br>
@@ -157,7 +166,7 @@
         </div>
     </section>
 
-    <!-- Educacao -->
+    <!-- Educação -->
     <section id="educacao" class="bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Educação</h2>
@@ -178,6 +187,7 @@
         <div class="container text-center">
             <h2 class="mb-4">Entre em Contato</h2>
             <p>Gostou do meu trabalho? Conecte-se comigo no <a href="https://www.linkedin.com/in/jeeeanlefchak" target="_blank">LinkedIn</a> ou envie um e-mail para <a href="mailto:jeanlefchak2@gmail.com">jeanlefchak2@gmail.com</a>.</p>
+            <p>Ou entre em contato pelo WhatsApp: <a href="https://wa.me/5546988027593" target="_blank">(46) 98802-7593</a></p>
         </div>
     </section>
 
